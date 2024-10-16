@@ -8,3 +8,137 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: lightgray;
 }
+/*  Main Container For Section1 & Section2 to Column them by flex-direction */
+
+/* main container part */
+.main-container{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: -20px;
+   
+}
+
+/* Section1 card design part */
+
+/*  here in this Section1 we can see nested Flex  */
+.section1{
+    background-color:  #FFFFFF;
+    width: 474px;
+    height: 421px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+    margin-top: 71px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+ 
+}
+
+/* Emoji-card image design */
+.section1 .emoji-card img{
+    width: 151px;
+    height: 152px;
+    border-radius: 16px;
+    margin-top: 14px;
+   
+}
+
+/* Emoji & Information Flex container part */
+.emoji-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 8px; */
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 18px;
+
+    
+}
+
+/* Informaton Design part */
+.section1 .information input[type='text'] {
+    height: 60px;
+    width: 375px;
+    padding: 22px;
+    border: 2px solid rgb(189, 189, 189);
+    font-size: large;
+    border-radius: 8px;
+}
+.section1 .information input[type='text']::placeholder{
+    color: rgb(189, 189, 189);
+}
+
+/* Button Design Part */
+.section1 .information button{
+    height: 60px;
+    width: 375px;
+    background-color: #EB5017;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+.section1 .information button:hover{
+    opacity: 85%;
+    color: #000000;
+}
+.information h4{
+    margin-bottom: -12px;
+}
+
+
+
+/* Section2 Card Design Part */
+
+/* main section2 flex for all cards */
+.section2 {
+    /* background-color: #fcb5b5; */
+    width: 474px;
+    height: 421px;
+    margin-top: 39px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/* by giving common class names to all cards and applying flex to it,
+   it will apply all cards at a time   */
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px; */
+    /* margin-top: 15px; */
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 474px;
+    height: 91px;
+}
+
+.cards img{
+    width: 67px;
+    height: 67px;
+    border-radius: 8px;
+    margin: 12px 16px;
+}
+.cards i{
+    margin: 31px 32px 36px;
+}
+.cards h3{
+    margin: 0 194px 0 0;
+    
+}
+
